@@ -8,3 +8,24 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-inline: 1rem;
+}
+
+/* container */
+#testoAlternato {
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+#testoAlternato p {
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
