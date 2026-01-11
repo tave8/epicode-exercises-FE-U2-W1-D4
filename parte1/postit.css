@@ -19,9 +19,14 @@
   flex-direction: column;
   min-width: 20%;
   border: 0;
+  cursor: pointer;
+  transition: all .3s ease-in;
 }
 
-/* color the flex items (post-its) */
+
+
+/* COLOR the flex items (post-its) */
+
 .container > div:nth-child(1),
 .container > div:nth-child(5),
 .container > div:nth-child(7) {
@@ -38,6 +43,50 @@
 .container > div:nth-child(6) {
   background-color: #c9c9f7;
 }
+
+/* POSITION the post-its */
+
+.container > div:nth-child(1),
+.container > div:nth-child(5) {
+  transform: rotate(-5deg);
+}
+
+.container > div:nth-child(2){
+  transform: rotate(6deg);
+}
+
+.container > div:nth-child(3){
+  transform: rotate(2deg);
+}
+
+.container > div:nth-child(4){
+  transform: rotate(5deg);
+}
+
+.container > div:nth-child(6){
+  transform: rotate(-3deg);
+}
+
+.container > div:nth-child(7){
+  transform: rotate(-4deg);
+}
+
+.container > div:nth-child(8){
+  transform: rotate(2deg);
+}
+
+
+/* ON POST-IT HOVER  */
+/* I must put this hover here, because 
+if I put it above the other .container > div 
+rules, this hover gets overriden */
+.container > div:hover {
+    /* reset its rotation */
+    transform: rotate(0deg) scale(1.1);
+    /* makes it bigger */
+}
+
+/* WRAPPER inside post-it flex item */
 
 .container > div > .wrapper {
   display: flex;
