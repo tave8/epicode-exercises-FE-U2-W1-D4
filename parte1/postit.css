@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+/* the flex items */
+.container > div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  box-shadow: 7px 5px 7px -4px rgba(0, 0, 0, 0.39);
+  /* flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 20%;
+  border: 0;
+}
+
+/* color the flex items (post-its) */
+.container > div:nth-child(1),
+.container > div:nth-child(5),
+.container > div:nth-child(7) {
+  background-color: #f9fac8;
+}
+
+.container > div:nth-child(2),
+.container > div:nth-child(4),
+.container > div:nth-child(8) {
+  background-color: #cafccb;
+}
+
+.container > div:nth-child(3),
+.container > div:nth-child(6) {
+  background-color: #c9c9f7;
+}
+
+.container > div > .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+/* title */
+.container > div > .wrapper > p:first-of-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
